@@ -39,10 +39,14 @@ function contarVocales(texto) {
         //Puede que la primera letra de la cadena este en mayuscula y sea vocal : Eva,Andres
         texto=texto.toLowerCase();
         for(caracter of texto){
-            switch(caracter){
-                case "a","e","i","o","u":
-                    contador=contador+1;
-                break;            
+            switch (caracter) {
+                case "a":
+                case "e":
+                case "i":
+                case "o":
+                case "u":
+                    contador++;
+                    break;
             }
         }
     }
