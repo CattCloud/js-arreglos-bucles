@@ -25,6 +25,8 @@ function ejecutarTodosLosRetos() {
         `[${arregloNumeros}]`, 
         `[${filtrarPares(arregloNumeros)}]`);
 
+    console.log(contarVocales('aeiou')); 
+
     salida += mostrar('Reto 4: Contar Vocales', 
         'JavaScript', 
         contarVocales('JavaScript'));
