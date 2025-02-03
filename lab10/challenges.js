@@ -88,10 +88,13 @@ function contarLetra(texto, letra) {
 // Reto 8: Elementos Únicos
 function obtenerUnicos(arreglo) {
     let newArray=[];
-    let unico=false;
-    for(let j=0;j>arreglo.length;j++){
-        for(let i=1;i>arreglo.length;i++){
+    let unico;
+    for(let j=0;j<arreglo.length;j++){
+        unico=true;//Empiezza siendo unico pero pasara comprobacion 
+        for(let i=1;i<arreglo.length;i++){
             if(arreglo[j]==arreglo[i]){
+                //En caso encuentre una elemento similar , entonces no es unico
+                unico=false;
                 break;  
             }            
         }
