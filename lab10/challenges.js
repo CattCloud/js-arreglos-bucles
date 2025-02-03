@@ -35,7 +35,6 @@ function filtrarPares(arreglo) {
 // Reto 4: Contar Vocales
 function contarVocales(texto) {
     let contador=0;
-    if(typeof texto == "string"){
         //Puede que la primera letra de la cadena este en mayuscula y sea vocal : Eva,Andres
         texto=texto.toLowerCase();
         for(caracter of texto){
@@ -49,7 +48,6 @@ function contarVocales(texto) {
                     break;
             }
         }
-    }
     return contador;
 }
 
