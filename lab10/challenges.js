@@ -102,6 +102,7 @@ function obtenerUnicos(arreglo) {
             newArray.push(arreglo[j]);
         }
     }
+    return newArray;
     // Debe retornar un nuevo arreglo sin elementos duplicados
 }
 
